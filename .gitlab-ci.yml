@@ -1,0 +1,15 @@
+stages:
+  - package
+
+default:
+  tags:
+    - uplynk
+
+package:
+  stage: package
+  script:
+    - mv dist/ signalfx-datasource
+  artifacts:
+    name: "grafana-signalfx-datasource-dist-${CI_COMMIT_REF_NAME}"
+    paths:
+      - signalfx-datasource/*
