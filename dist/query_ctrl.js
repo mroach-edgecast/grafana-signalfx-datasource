@@ -82,7 +82,7 @@ System.register(['lodash', 'app/plugins/sdk'], function (_export, _context) {
                 }, {
                     key: 'onDataError',
                     value: function onDataError(err) {
-                        this.lastError = err.replace(/(?:\r\n|\r|\n)/g, '<br>');;
+                        this.lastError = err;
                     }
                 }]);
 

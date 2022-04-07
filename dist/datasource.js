@@ -290,12 +290,12 @@ System.register(['lodash', './signalfx', './stream_handler', './proxy_handler'],
                 }, {
                     key: 'mapBackendProxyResponse',
                     value: function mapBackendProxyResponse(response) {
-                        var table = response.data.results.items.tables[0];
-                        var results = [];
-                        for (var row = 0; row < table.rows.length; row++) {
-                            results.push(table.rows[row][0]);
-                        }
-                        response.data = results;
+                        //const table = response.data.results.items.tables[0];
+                        //const results = []
+                        //for (let row = 0; row < table.rows.length; row++) {
+                        //    results.push(table.rows[row][0]);
+                        //}
+                        //response.data = results;
                         return response;
                     }
                 }, {

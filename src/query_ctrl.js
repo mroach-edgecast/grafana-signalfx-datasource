@@ -14,7 +14,7 @@ class SignalFxQueryCtrl extends QueryCtrl {
     }
 
     onDataError(err) {
-        this.lastError = err.replace(/(?:\r\n|\r|\n)/g, '<br>');;
+        this.lastError = err;
     }
 }
 

@@ -1,12 +1,13 @@
 {
   "name": "grafana-signalfx-plugin",
   "private": true,
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "build": "./node_modules/grunt-cli/bin/grunt",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "grafana-toolkit plugin:dev"
   },
   "repository": {
     "type": "git",
@@ -18,7 +19,7 @@
     "url": "https://github.com/signalfx/signalfx-grafana-plugin/issues"
   },
   "engines": {
-    "node": "6.10.0"
+    "node": "~16"
   },
   "engineStrict": true,
   "devDependencies": {
@@ -39,6 +40,7 @@
     "q": "^1.5.0"
   },
   "dependencies": {
+    "@grafana/toolkit": "^8.4.5",
     "acorn": "^6.1.1",
     "babel-plugin-transform-es2015-for-of": "^6.6.0",
     "babel-plugin-transform-es2015-modules-systemjs": "^6.24.1",
