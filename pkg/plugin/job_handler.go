@@ -170,10 +170,10 @@ func (t *SignalFxJobHandler) handleDataMessage(m *messages.DataMessage) bool {
 			tsid := int64(pl.TSID)
 			value := pl.Value()
 			if (t.Frames[tsid]) == nil {
-				t.Frames[tsid] = data.NewFrameOfFieldTypes("signalflow message", 0, data.FieldTypeInt64, data.FieldTypeFloat64)
+				t.Frames[tsid] = data.NewFrameOfFieldTypes("signalflow message", 0, data.FieldTypeTime, data.FieldTypeFloat64)
 			}
 			t.Frames[tsid].AppendRow(
-				timestamp.UnixNano()/int64(time.Millisecond),
+				timestamp,
 				toFloat64(value),
 			)
 		}

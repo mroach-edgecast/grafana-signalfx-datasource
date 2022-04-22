@@ -1,16 +1,10 @@
 {
-  "name": "SignalFx",
-  "id": "signalfx-datasource",
+  "$schema": "https://raw.githubusercontent.com/grafana/grafana/master/docs/sources/developers/plugins/plugin.schema.json",
   "type": "datasource",
-
-  "partials": {
-    "config": "public/app/plugins/datasource/signalfx/partials/config.html"
-  },
-
+  "name": "signalfx-datasource",
+  "id": "signalfx-datasource",
   "metrics": true,
-  "annotations": false,
   "backend": true,
-  "alerting": true,
   "executable": "signalfx-plugin",
   "info": {
     "description": "SignalFx Datasource",
@@ -26,12 +20,12 @@
       {"name": "GitHub", "url": "https://github.com/signalfx/grafana-signalfx-datasource"},
       {"name": "Apache License", "url": "https://github.com/signalfx/grafana-signalfx-datasource/blob/master/LICENSE"}
     ],
+    "screenshots": [],
     "version": "2.0.0",
-    "updated": "2020-03-10"
+    "updated": "2022-04-22"
   },
-
   "dependencies": {
     "grafanaDependency": ">=7.0.0",
-    "plugins": [ ]
+    "plugins": []
   }
 }
